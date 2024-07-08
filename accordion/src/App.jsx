@@ -3,6 +3,8 @@ import RandomColor from "./components/RandomColor";
 import RatingStar from "./components/RatingStar";
 import ImageSlider from "./components/ImageSlider";
 import LoadMore from "./components/LoadMore";
+import TreeView from "./components/tree-view/TreeView";
+import menus from "./components/tree-view/data";
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
         page={"1"}
         limit={"10"}
       /> */}
-      <LoadMore />
+      {/* <LoadMore /> */}
+      <TreeView menus={menus} />
     </div>
   );
 }
