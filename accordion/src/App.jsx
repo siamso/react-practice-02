@@ -6,10 +6,13 @@ import LoadMore from "./components/LoadMore";
 import TreeView from "./components/tree-view/TreeView";
 import menus from "./components/tree-view/data";
 import QrCode from "./components/QRCode";
+import ToggleTheme from "./components/toggle-theme/ToggleTheme";
+import useLocalStorage from "./components/toggle-theme/hooks/useLocalStorage";
 
 function App() {
+  const [theme, setTheme] = useLocalStorage("theme", "dark");
   return (
-    <div className="">
+    <div className="bg-white dark:bg-black min-h-screen" data-mode={theme}>
       {/* <Accordion/> */}
       {/* <RandomColor /> */}
       {/* <RatingStar noOfStar={10} /> */}
@@ -20,7 +23,8 @@ function App() {
       /> */}
       {/* <LoadMore /> */}
       {/* <TreeView menus={menus} /> */}
-      <QrCode />
+      {/* <QrCode /> */}
+      <ToggleTheme theme={theme} setTheme={setTheme} />
     </div>
   );
 }
