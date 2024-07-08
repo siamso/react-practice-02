@@ -5,6 +5,7 @@ import ImageSlider from "./components/ImageSlider";
 import LoadMore from "./components/LoadMore";
 import TreeView from "./components/tree-view/TreeView";
 import menus from "./components/tree-view/data";
+import QrCode from "./components/QRCode";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         limit={"10"}
       /> */}
       {/* <LoadMore /> */}
-      <TreeView menus={menus} />
+      {/* <TreeView menus={menus} /> */}
+      <QrCode />
     </div>
   );
 }
