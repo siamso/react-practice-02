@@ -9,6 +9,7 @@ import QrCode from "./components/QRCode";
 import ToggleTheme from "./components/toggle-theme/ToggleTheme";
 import useLocalStorage from "./components/toggle-theme/hooks/useLocalStorage";
 import ScrollIndicator from "./components/ScrollIndicator";
+import TabTest from "./components/tabs/TabTest";
 
 function App() {
   // const [theme, setTheme] = useLocalStorage("theme", "dark");
@@ -26,7 +27,8 @@ function App() {
       {/* <TreeView menus={menus} /> */}
       {/* <QrCode /> */}
       {/* <ToggleTheme theme={theme} setTheme={setTheme} /> */}
-      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
+      {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
+      <TabTest />
     </div>
   );
 }
