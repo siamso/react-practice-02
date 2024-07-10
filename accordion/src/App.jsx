@@ -11,6 +11,7 @@ import useLocalStorage from "./components/toggle-theme/hooks/useLocalStorage";
 import ScrollIndicator from "./components/ScrollIndicator";
 import TabTest from "./components/tabs/TabTest";
 import ModalTest from "./components/modal/ModalTest";
+import Github from "./components/github-profile/Github";
 
 function App() {
   // const [theme, setTheme] = useLocalStorage("theme", "dark");
@@ -30,7 +31,8 @@ function App() {
       {/* <ToggleTheme theme={theme} setTheme={setTheme} /> */}
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
       {/* <TabTest /> */}
-      <ModalTest />
+      {/* <ModalTest /> */}
+      <Github />
     </div>
   );
 }
