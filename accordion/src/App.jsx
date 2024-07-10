@@ -8,11 +8,12 @@ import menus from "./components/tree-view/data";
 import QrCode from "./components/QRCode";
 import ToggleTheme from "./components/toggle-theme/ToggleTheme";
 import useLocalStorage from "./components/toggle-theme/hooks/useLocalStorage";
+import ScrollIndicator from "./components/ScrollIndicator";
 
 function App() {
-  const [theme, setTheme] = useLocalStorage("theme", "dark");
+  // const [theme, setTheme] = useLocalStorage("theme", "dark");
   return (
-    <div className="bg-white dark:bg-black min-h-screen" data-mode={theme}>
+    <div className="" /*data-mode={theme}*/>
       {/* <Accordion/> */}
       {/* <RandomColor /> */}
       {/* <RatingStar noOfStar={10} /> */}
@@ -24,7 +25,8 @@ function App() {
       {/* <LoadMore /> */}
       {/* <TreeView menus={menus} /> */}
       {/* <QrCode /> */}
-      <ToggleTheme theme={theme} setTheme={setTheme} />
+      {/* <ToggleTheme theme={theme} setTheme={setTheme} /> */}
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
     </div>
   );
 }
