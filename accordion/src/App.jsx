@@ -12,6 +12,7 @@ import ScrollIndicator from "./components/ScrollIndicator";
 import TabTest from "./components/tabs/TabTest";
 import ModalTest from "./components/modal/ModalTest";
 import Github from "./components/github-profile/Github";
+import TicTacToe from "./components/Tic-Tac-Toe";
 
 function App() {
   // const [theme, setTheme] = useLocalStorage("theme", "dark");
@@ -32,7 +33,8 @@ function App() {
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
       {/* <TabTest /> */}
       {/* <ModalTest /> */}
-      <Github />
+      {/* <Github /> */}
+      <TicTacToe />
     </div>
   );
 }
