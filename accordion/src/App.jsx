@@ -13,7 +13,8 @@ import TabTest from "./components/tabs/TabTest";
 import ModalTest from "./components/modal/ModalTest";
 import Github from "./components/github-profile/Github";
 import TicTacToe from "./components/Tic-Tac-Toe";
-
+import FeatureFlagGlobalContext from "./components/feature-flag/context/index";
+import FeatureFlag from "./components/feature-flag/FeatureFlag";
 function App() {
   // const [theme, setTheme] = useLocalStorage("theme", "dark");
   return (
@@ -34,7 +35,10 @@ function App() {
       {/* <TabTest /> */}
       {/* <ModalTest /> */}
       {/* <Github /> */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      <FeatureFlagGlobalContext>
+        <FeatureFlag />
+      </FeatureFlagGlobalContext>
     </div>
   );
 }
