@@ -18,6 +18,7 @@ import FeatureFlag from "./components/feature-flag/FeatureFlag";
 import FetchHookTest from "./components/FetchHookTest";
 import UseOutsideClickTest from "./components/UseOutsideClickTest";
 import UseWindowResizeTest from "./components/UseWindowResizeTest";
+import ScrollTopToBottom from "./components/scrolling-page/ScrollTopToBottom";
 function App() {
   // const [theme, setTheme] = useLocalStorage("theme", "dark");
   return (
@@ -42,9 +43,10 @@ function App() {
       {/* <FeatureFlagGlobalContext>
         <FeatureFlag />
       </FeatureFlagGlobalContext> */}
-      <FetchHookTest />
+      {/* <FetchHookTest />
       <UseOutsideClickTest />
-      <UseWindowResizeTest />
+      <UseWindowResizeTest /> */}
+      <ScrollTopToBottom />
     </div>
   );
 }
