@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import data from "./accordion/data";
+import data from "../accordion/data";
 
 function ScrollIndicator({ url }) {
   const [loading, setLoading] = useState(false);
