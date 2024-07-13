@@ -48,7 +48,7 @@ function App() {
       <UseOutsideClickTest />
       <UseWindowResizeTest /> */}
       {/* <ScrollTopToBottom /> */}
-      <ScrollToSection />
+      {/* <ScrollToSection /> */}
     </div>
   );
 }
