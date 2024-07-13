@@ -15,6 +15,9 @@ import Github from "./components/github-profile/Github";
 import TicTacToe from "./components/Tic-Tac-Toe";
 import FeatureFlagGlobalContext from "./components/feature-flag/context/index";
 import FeatureFlag from "./components/feature-flag/FeatureFlag";
+import FetchHookTest from "./components/FetchHookTest";
+import UseOutsideClickTest from "./components/UseOutsideClickTest";
+import UseWindowResizeTest from "./components/UseWindowResizeTest";
 function App() {
   // const [theme, setTheme] = useLocalStorage("theme", "dark");
   return (
@@ -36,9 +39,12 @@ function App() {
       {/* <ModalTest /> */}
       {/* <Github /> */}
       {/* <TicTacToe /> */}
-      <FeatureFlagGlobalContext>
+      {/* <FeatureFlagGlobalContext>
         <FeatureFlag />
-      </FeatureFlagGlobalContext>
+      </FeatureFlagGlobalContext> */}
+      <FetchHookTest />
+      <UseOutsideClickTest />
+      <UseWindowResizeTest />
     </div>
   );
 }
