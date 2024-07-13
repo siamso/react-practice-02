@@ -19,6 +19,7 @@ import FetchHookTest from "./components/FetchHookTest";
 import UseOutsideClickTest from "./components/UseOutsideClickTest";
 import UseWindowResizeTest from "./components/UseWindowResizeTest";
 import ScrollTopToBottom from "./components/scrolling-page/ScrollTopToBottom";
+import ScrollToSection from "./components/scrolling-page/ScrollToSection";
 function App() {
   // const [theme, setTheme] = useLocalStorage("theme", "dark");
   return (
@@ -35,7 +36,7 @@ function App() {
       {/* <TreeView menus={menus} /> */}
       {/* <QrCode /> */}
       {/* <ToggleTheme theme={theme} setTheme={setTheme} /> */}
-      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
+      {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
       {/* <TabTest /> */}
       {/* <ModalTest /> */}
       {/* <Github /> */}
@@ -47,6 +48,7 @@ function App() {
       <UseOutsideClickTest />
       <UseWindowResizeTest /> */}
       {/* <ScrollTopToBottom /> */}
+      <ScrollToSection />
     </div>
   );
 }
